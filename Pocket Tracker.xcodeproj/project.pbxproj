@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3835902D2783449600F35123 /* Pocket_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835902C2783449600F35123 /* Pocket_TrackerApp.swift */; };
-		3835902F2783449600F35123 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835902E2783449600F35123 /* ContentView.swift */; };
+		3835902D2783449600F35123 /* PocketTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835902C2783449600F35123 /* PocketTrackerApp.swift */; };
 		383590312783449700F35123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383590302783449700F35123 /* Assets.xcassets */; };
 		383590342783449700F35123 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383590332783449700F35123 /* Preview Assets.xcassets */; };
-		383590362783449700F35123 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383590352783449700F35123 /* Persistence.swift */; };
 		383590392783449700F35123 /* Pocket_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 383590372783449700F35123 /* Pocket_Tracker.xcdatamodeld */; };
 		383590432783449700F35123 /* Pocket_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383590422783449700F35123 /* Pocket_TrackerTests.swift */; };
 		3835904D2783449700F35123 /* Pocket_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835904C2783449700F35123 /* Pocket_TrackerUITests.swift */; };
 		3835904F2783449700F35123 /* Pocket_TrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835904E2783449700F35123 /* Pocket_TrackerUITestsLaunchTests.swift */; };
+		3835905C2783A6DD00F35123 /* AddRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905B2783A6DD00F35123 /* AddRecord.swift */; };
+		3835905E2784A40A00F35123 /* RecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905D2784A40A00F35123 /* RecordList.swift */; };
+		383590602784D00000F35123 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905F2784D00000F35123 /* RecordRow.swift */; };
+		38F340312785FB8600BEA2A3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F340302785FB8600BEA2A3 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,17 +39,19 @@
 
 /* Begin PBXFileReference section */
 		383590292783449600F35123 /* Pocket Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pocket Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3835902C2783449600F35123 /* Pocket_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_TrackerApp.swift; sourceTree = "<group>"; };
-		3835902E2783449600F35123 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3835902C2783449600F35123 /* PocketTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTrackerApp.swift; sourceTree = "<group>"; };
 		383590302783449700F35123 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		383590332783449700F35123 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		383590352783449700F35123 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		383590382783449700F35123 /* Pocket_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pocket_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		3835903E2783449700F35123 /* Pocket TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		383590422783449700F35123 /* Pocket_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_TrackerTests.swift; sourceTree = "<group>"; };
 		383590482783449700F35123 /* Pocket TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pocket TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3835904C2783449700F35123 /* Pocket_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_TrackerUITests.swift; sourceTree = "<group>"; };
 		3835904E2783449700F35123 /* Pocket_TrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pocket_TrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3835905B2783A6DD00F35123 /* AddRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecord.swift; sourceTree = "<group>"; };
+		3835905D2784A40A00F35123 /* RecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordList.swift; sourceTree = "<group>"; };
+		3835905F2784D00000F35123 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
+		38F340302785FB8600BEA2A3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,12 @@
 		3835902B2783449600F35123 /* Pocket Tracker */ = {
 			isa = PBXGroup;
 			children = (
-				3835902C2783449600F35123 /* Pocket_TrackerApp.swift */,
-				3835902E2783449600F35123 /* ContentView.swift */,
+				3835902C2783449600F35123 /* PocketTrackerApp.swift */,
+				3835905D2784A40A00F35123 /* RecordList.swift */,
+				38F340302785FB8600BEA2A3 /* Persistence.swift */,
+				3835905F2784D00000F35123 /* RecordRow.swift */,
+				3835905B2783A6DD00F35123 /* AddRecord.swift */,
 				383590302783449700F35123 /* Assets.xcassets */,
-				383590352783449700F35123 /* Persistence.swift */,
 				383590372783449700F35123 /* Pocket_Tracker.xcdatamodeld */,
 				383590322783449700F35123 /* Preview Content */,
 			);
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383590602784D00000F35123 /* RecordRow.swift in Sources */,
 				383590392783449700F35123 /* Pocket_Tracker.xcdatamodeld in Sources */,
-				383590362783449700F35123 /* Persistence.swift in Sources */,
-				3835902F2783449600F35123 /* ContentView.swift in Sources */,
-				3835902D2783449600F35123 /* Pocket_TrackerApp.swift in Sources */,
+				3835905E2784A40A00F35123 /* RecordList.swift in Sources */,
+				38F340312785FB8600BEA2A3 /* Persistence.swift in Sources */,
+				3835905C2783A6DD00F35123 /* AddRecord.swift in Sources */,
+				3835902D2783449600F35123 /* PocketTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

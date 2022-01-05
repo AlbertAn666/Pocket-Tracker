@@ -8,12 +8,12 @@
 import SwiftUI
 
 @main
-struct Pocket_TrackerApp: App {
+struct PocketTrackerApp: App {
     let persistenceController = PersistenceController.shared
-
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecordList()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
