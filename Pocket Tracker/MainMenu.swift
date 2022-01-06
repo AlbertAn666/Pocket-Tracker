@@ -17,6 +17,7 @@ struct MainMenu: View {
         NavigationView {
             VStack {
                 Text("This is main menu")
+                
                 .sheet(isPresented: $addRecordView) {
                     AddRecord {title, category, amount, date, note in
                         addRecord(title: title, category: category, amount: amount, date: date, note: note)
@@ -27,9 +28,10 @@ struct MainMenu: View {
                     Text("History records")
                 }
             }
-            .navigationBarTitle(Text("Pocket Tracker"), displayMode: .inline)
+            .navigationTitle(Text("Pocket Tracker"))
             .navigationBarItems(trailing: Button("Add", action: {self.addRecordView.toggle()}))
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         
     }
     

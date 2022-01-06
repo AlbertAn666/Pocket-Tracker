@@ -22,14 +22,14 @@ struct RecordList: View {
     @State var showAlert = false
     
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(records, id: \.title) {
-                    RecordRow(record: $0)
-                }
-                .onDelete(perform: deleteRecord)
-                // todo: tap event
-                // skip to another page show the record detail and the user could modify it
+    
+        List {
+            ForEach(records, id: \.title) {
+                RecordRow(record: $0)
+            }
+            .onDelete(perform: deleteRecord)
+            // todo: tap event
+            // skip to another page show the record detail and the user could modify it
 //                .onTapGesture {
 //                    self.showAlert = true
 //
@@ -37,24 +37,24 @@ struct RecordList: View {
 //                        content: {
 //                    Alert(title: Text("alert"))
 //                })
-            }
-            .sheet(isPresented: $isPresented) {
-                AddRecord {title, category, amount, date, note in
-                    self.addRecord(title: title, category: category, amount: amount, date: date, note: note)
-                    self.isPresented = false
-                }
-            }
-            .navigationBarTitle(Text("History Records"))
-            .navigationBarItems(trailing:
-                                    Button(action: {self.isPresented.toggle()}) {
-                                        Image(systemName: "plus")
-                                    }
-                                )
         }
+        .sheet(isPresented: $isPresented) {
+            AddRecord {title, category, amount, date, note in
+                self.addRecord(title: title, category: category, amount: amount, date: date, note: note)
+                self.isPresented = false
+            }
+        }
+        .navigationBarTitle(Text("History Records"))
+        .navigationBarItems(trailing:
+                                Button(action: {self.isPresented.toggle()}) {
+                                    Image(systemName: "plus")
+                                }
+                            )
+    
     }
     
     
-    private func deleteRecord(at offsets: IndexSet) {
+    public func deleteRecord(at offsets: IndexSet) {
         offsets.forEach { index in
           let record = self.records[index]
           self.managedObjectContext.delete(record)

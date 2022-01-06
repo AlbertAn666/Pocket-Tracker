@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddRecord: View {
-    public var categories = ["Online Shopping", "Groceries", "Food & Drink", "Transportation", "Entertainment", "Default"]
+    public var categories = ["Online Shopping", "Groceries", "Food & Drink", "Transportation", "Entertainment", "Other"]
     
     @State var title = ""
     @State var category = ""
@@ -55,7 +55,7 @@ struct AddRecord: View {
     
     private func addRecordAction() {
         amount = Double(amount_str) ?? 0.0
-        onComplete(title, category.isEmpty ? "Default" : category,
+        onComplete(title, category.isEmpty ? "Other" : category,
                    amount, date, note)
     }
 }

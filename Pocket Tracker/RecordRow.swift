@@ -31,7 +31,7 @@ struct RecordRow: View {
             }
             
             HStack {
-                Text("Note: ").font(.caption)
+                Text("Note:").font(.caption)
                 record.note.map(Text.init).font(.caption)
             }
         }
