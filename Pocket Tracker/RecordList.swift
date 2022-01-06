@@ -74,7 +74,7 @@ struct RecordList: View {
         saveContext()
     }
     
-    func saveContext() {
+    private func saveContext() {
         do {
             try managedObjectContext.save()
         } catch {

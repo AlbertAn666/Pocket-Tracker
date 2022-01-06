@@ -13,7 +13,8 @@ struct PocketTrackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RecordList()
+//            RecordList()
+            MainMenu()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
