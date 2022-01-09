@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct AddRecord: View {
-    public var categories = ["Online Shopping", "Groceries", "Food & Drink", "Transportation", "Entertainment", "Other"]
+//    public var categories = ["Online Shopping", "Groceries", "Food & Drink", "Transportation", "Entertainment", "Other"]
+    
+    @StateObject var globalVariables = GlobalVariables()
     
     @State var title = ""
     @State var category = ""
@@ -20,6 +22,7 @@ struct AddRecord: View {
     
     var body: some View {
         NavigationView {
+            let categories = globalVariables.categories
             Form {
                 Section(header: Text("Title")) {
                     TextField("Title", text: $title)

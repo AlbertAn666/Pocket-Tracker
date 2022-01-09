@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecordRow: View {
+ struct RecordRow: View {
     let record: Record
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()

@@ -17,6 +17,10 @@
 		3835905C2783A6DD00F35123 /* AddRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905B2783A6DD00F35123 /* AddRecord.swift */; };
 		3835905E2784A40A00F35123 /* RecordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905D2784A40A00F35123 /* RecordList.swift */; };
 		383590602784D00000F35123 /* RecordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3835905F2784D00000F35123 /* RecordRow.swift */; };
+		38407DE5278B40540036B92F /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38407DE4278B40540036B92F /* DayView.swift */; };
+		38407DE7278B88BD0036B92F /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38407DE6278B88BD0036B92F /* GlobalVariables.swift */; };
+		38407DE9278B8EA80036B92F /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38407DE8278B8EA80036B92F /* Calculate.swift */; };
+		38407DEB278B9CF60036B92F /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38407DEA278B9CF60036B92F /* CategoryView.swift */; };
 		38D65DC32787410900F4700C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D65DC22787410900F4700C /* MainMenu.swift */; };
 		38F340312785FB8600BEA2A3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F340302785FB8600BEA2A3 /* Persistence.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +56,10 @@
 		3835905B2783A6DD00F35123 /* AddRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecord.swift; sourceTree = "<group>"; };
 		3835905D2784A40A00F35123 /* RecordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordList.swift; sourceTree = "<group>"; };
 		3835905F2784D00000F35123 /* RecordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordRow.swift; sourceTree = "<group>"; };
+		38407DE4278B40540036B92F /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		38407DE6278B88BD0036B92F /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		38407DE8278B8EA80036B92F /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		38407DEA278B9CF60036B92F /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		38D65DC22787410900F4700C /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		38F340302785FB8600BEA2A3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,9 +115,13 @@
 				3835902C2783449600F35123 /* PocketTrackerApp.swift */,
 				3835905D2784A40A00F35123 /* RecordList.swift */,
 				38D65DC22787410900F4700C /* MainMenu.swift */,
+				38407DE4278B40540036B92F /* DayView.swift */,
+				38407DEA278B9CF60036B92F /* CategoryView.swift */,
+				38407DE8278B8EA80036B92F /* Calculate.swift */,
 				38F340302785FB8600BEA2A3 /* Persistence.swift */,
 				3835905F2784D00000F35123 /* RecordRow.swift */,
 				3835905B2783A6DD00F35123 /* AddRecord.swift */,
+				38407DE6278B88BD0036B92F /* GlobalVariables.swift */,
 				383590302783449700F35123 /* Assets.xcassets */,
 				383590372783449700F35123 /* Pocket_Tracker.xcdatamodeld */,
 				383590322783449700F35123 /* Preview Content */,
@@ -275,9 +287,13 @@
 				383590602784D00000F35123 /* RecordRow.swift in Sources */,
 				383590392783449700F35123 /* Pocket_Tracker.xcdatamodeld in Sources */,
 				38D65DC32787410900F4700C /* MainMenu.swift in Sources */,
+				38407DE7278B88BD0036B92F /* GlobalVariables.swift in Sources */,
 				3835905E2784A40A00F35123 /* RecordList.swift in Sources */,
+				38407DEB278B9CF60036B92F /* CategoryView.swift in Sources */,
+				38407DE5278B40540036B92F /* DayView.swift in Sources */,
 				38F340312785FB8600BEA2A3 /* Persistence.swift in Sources */,
 				3835905C2783A6DD00F35123 /* AddRecord.swift in Sources */,
+				38407DE9278B8EA80036B92F /* Calculate.swift in Sources */,
 				3835902D2783449600F35123 /* PocketTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pocket Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = X6YTZNV254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -467,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pocket Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = X6YTZNV254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

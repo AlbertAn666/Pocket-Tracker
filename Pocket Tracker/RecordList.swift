@@ -25,7 +25,7 @@ struct RecordList: View {
     
         List {
             ForEach(records, id: \.title) {
-                RecordRow(record: $0)
+                RecordRow(record: $0).padding()
             }
             .onDelete(perform: deleteRecord)
             // todo: tap event
@@ -46,9 +46,8 @@ struct RecordList: View {
         }
         .navigationBarTitle(Text("History Records"))
         .navigationBarItems(trailing:
-                                Button(action: {self.isPresented.toggle()}) {
-                                    Image(systemName: "plus")
-                                }
+                                Button("Add",
+                                       action: {self.isPresented.toggle()})
                             )
     
     }
